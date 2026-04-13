@@ -6,35 +6,23 @@ using System.Threading.Tasks;
 using System.Media;
 using System.IO;
 
-public class AudioPlayer
-{
-    public static void PlayGreeting()
-    {
-        try
-        {
-            string path = "greeting.wav";
 
-            if (File.Exists(path))
+   namespace CyberSecurityBot
+{
+    public static class AudioPlayer
+    {
+        public static void PlayGreeting()
+        {
+            try
             {
-                SoundPlayer player = new SoundPlayer(path);
+                
+               SoundPlayer player = new SoundPlayer();
                 player.PlaySync();
             }
-            else
+            catch
             {
-                Console.WriteLine("Audio file not found.");
+                Console.WriteLine(" Voice playback unavailable.");
             }
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine("Error playing audio: " + ex.Message);
-        }
-    }
-}
-
-
-namespace PROGPOEP1
-{
-    internal class AudioPlayer
-    {
     }
 }
