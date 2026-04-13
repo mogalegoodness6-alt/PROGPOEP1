@@ -24,11 +24,10 @@ class Program
         // Play voice greeting
         CyberSecurityBot.AudioPlayer.PlayGreeting();
         
-
-        // Show ASCII UI
+ 
         UIHelper.ShowHeader();
 
-        // Ask user name
+        // Asking for user name
         Console.ForegroundColor = ConsoleColor.DarkBlue;
         Console.Write("Please enter your name: ");
         string name = Console.ReadLine();
@@ -45,7 +44,7 @@ class Program
 
         UIHelper.TypeText($"Hello {user.Name}! Welcome to the Cybersecurity Awareness Bot.");
 
-        // Start chatbot
+        // Start chatbot now
         ChatBot bot = new ChatBot(user);
         bot.StartChat();
     }
