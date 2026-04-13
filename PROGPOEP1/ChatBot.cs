@@ -29,13 +29,14 @@ public class ChatBot
             // Input validation
             if (string.IsNullOrEmpty(input))
             {
-                Console.WriteLine("Bot: Please enter something.");
+                Console.WriteLine("Bot: Field cannot be empty. Please ask me something ");
                 continue;
             }
 
             if (input == "exit")
             {
-                Console.WriteLine("Bot: Goodbye " + user.Name + "! Stay safe online 👋");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Bot: Goodbye " + user.Name + "! REMEMBER TO PRIORITIZE YOUR SAFETY ONLINE!");
                 break;
             }
 
@@ -48,13 +49,15 @@ public class ChatBot
         Console.ForegroundColor = ConsoleColor.Green;
         Console.Write("Bot: ");
 
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
         if (input.Contains("how are you"))
+            
         {
-            Console.WriteLine($"I'm just a 'bot. I cannot feel. {user.Name}!Ready to keep you safe online ?😄");
+            Console.WriteLine($"I'm just a 'bot. I cannot feel.  But i am ready to help you stay safe online{user.Name}! ");
         }
         else if (input.Contains("purpose"))
         {
-            Console.WriteLine("My purpose is to educate you about cybersecurity.");
+            Console.WriteLine("My purpose is to enlighten you more on cybersecurity.");
         }
         else if (input.Contains("what can i ask"))
         {
@@ -62,19 +65,19 @@ public class ChatBot
         }
         else if (input.Contains("password"))
         {
-            Console.WriteLine("Use strong passwords with letters, numbers, and symbols.");
+            Console.WriteLine("A password is a secret word or string of characters that you use to gain access to an account or system and prove your identity. Passwords prevent people from accessing your personal information and data without your permission. ");
         }
         else if (input.Contains("phishing"))
         {
-            Console.WriteLine("Avoid clicking suspicious links and verify emails.");
+            Console.WriteLine("Phishing is a type of cyberattack that involves sending fraudulent communications, usually emails, that appear to come from legitimate organizations like your bank or a well-known company to steal information. It also frequently occurs via fictitious email messages, SMS, or websites urging consumers to surrender passwords, money, or personal information. ");
         }
-        else if (input.Contains("browsing"))
+        else if (input.Contains("safe browsing"))
         {
-            Console.WriteLine("Always use secure websites (https) and avoid unsafe downloads.");
+            Console.WriteLine("Safe browsing is the art of surfing the web without having your personal information or devices at risk from threats like malware, scams, and hackers. It’s as simple as not clicking on suspicious links, visiting secure websites and keeping your software and security applications up to date.");
         }
         else
         {
-            Console.WriteLine("I didn't quite understand that. Could you rephrase?");
+            Console.WriteLine("I am sorry,I didn't quite get that. Could you  please rephrase?");
         }
 
         Console.ResetColor();
