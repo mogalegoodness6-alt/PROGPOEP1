@@ -41,6 +41,7 @@ _________
 
     public static void Divider()
     {
+        // Divider
         Console.WriteLine("-------------------------------------------");
     }
 }
