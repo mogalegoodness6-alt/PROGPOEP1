@@ -13,7 +13,7 @@ public class UIHelper
         Console.ForegroundColor = ConsoleColor.Cyan;
 
         Console.WriteLine("===========================================");
-        Console.WriteLine(" CYBERSECURITY AWARENESS BOT");
+        Console.WriteLine("  TLHATSI CYBERSECURITY AWARENESS BOT");
         Console.WriteLine("===========================================");
 
         Console.WriteLine(@"
