@@ -8,6 +8,7 @@ namespace PROGPOEP1
 {
     public class User
     {
+        // gets and sets
         public string Name { get; set; }
     }
 }
