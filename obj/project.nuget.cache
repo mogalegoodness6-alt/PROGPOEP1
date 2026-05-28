@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uwV6xY4NjAE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mogal\\source\\repos\\PROGPOEP2\\PROGPOEP2\\PROGPOEP2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mogal\\.nuget\\packages\\system.speech\\10.0.8\\system.speech.10.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
